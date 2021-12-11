@@ -101,3 +101,14 @@ main .card .card__expiry h3 {
 main .card .card__expiry p {
     font-size: 1.4rem;
 }
+ 
+main .hand {
+    position: absolute;
+    right: 15px;
+   bottom: -10px;
+}
+
+main .hand img {
+    max-width: 650px;
+    height: auto;
+}
