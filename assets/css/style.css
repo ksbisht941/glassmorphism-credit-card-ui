@@ -14,10 +14,8 @@ body {
     height: 100vh;
     width: 100%;
     font-family: 'Nunito', sans-serif;
-background-image: linear-gradient(315deg, #EFD4F2 0%, #D5BCF2 74%);
-
-    /* background-color: #63a4ff; */
-/* background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%); */
+    /* background-color: #000; */
+    background-color: #060606;
 }
 
 main {
@@ -29,28 +27,86 @@ main {
     align-items: center;
 }
 
+main .one {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    height: 400px;
+    width: 400px;
+    background-image: linear-gradient(to top right, #D40EDC, #7F02D9);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+main .two {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(to top right, #F43CA7, #771167);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+main .three {
+    position: absolute;
+    bottom: 10%;
+    left: 22%;
+    height: 300px;
+    width: 300px;
+    background-image: linear-gradient(to top right, #D11D69, #F22F7C);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 main .card {
     grid-column: 1/2;
     width: 32rem;
     height: 20rem;
-    border-radius: 1rem;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     padding: 0 2rem;
     align-items: center;
     color: #ffffff;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.1);
-    z-index: 200;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .4) 2%, rgba(0, 0, 0, .25) 98%);
+    z-index: 999;
     position: relative;
     overflow: hidden;
-   
-    box-shadow: -1px 1px 0px 0px rgba(255,255,255,0.2),
-            -2px 2px 0px 0px rgba(255,255,255,0.2),
-            -3px 3px 0px 0px rgba(255,255,255,0.2),
-            -4px 4px 0px 0px rgba(255,255,255,0.2);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
 
+main .card::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    height: 100%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, .1);
+    z-index: -1;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 main .card .card__visa {
